@@ -13,7 +13,7 @@
 2つの方法を案内します。
 複雑な編集はKeymapEditorが適していますが、初めての編集はZMK Studioがおすすめです。  
 
-|項目|KeymapEditor<br>[編集手順](docs/KeymapEditor.md)|ZMK Studio<br>[編集手順](docs/ZMK Studio.md)|  
+|項目|KeymapEditor<br>[編集手順](docs/KeymapEditor.md)|ZMK Studio<br>[編集手順](docs/ZMK-Studio.md)|  
 |:-:|:-|:-|  
 |事前準備|GitHubのアカウント登録<br>リポジトリのフォーク、登録|特になし|  
 |編集方法|ブラウザ上でマウス操作→ファームウェアの書き出し、転送|ブラウザ上でマウス操作→ブラウザ上で上書き保存|  
