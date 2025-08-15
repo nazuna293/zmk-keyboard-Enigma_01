@@ -10,6 +10,7 @@
 1. GitHubアカウントを連携させる  
 2. zmk-config-Enigma_01を連携させる  
 3. 該当するKeyboard（配列）を選択する  
+
 |Keyboard|配列|  
 |:-|:-|  
 |Enigma_01_a|1.0u配列|  
