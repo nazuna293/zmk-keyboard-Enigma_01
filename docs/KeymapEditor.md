@@ -6,11 +6,13 @@
 📷フォークするボタン
 
 ## KeymapEditorと連携
-GitHubアカウントを連携させる
-zmk-config-Enigma_01を連携させる
-配列を選択する
-キーマップを変更する
-キーマップを保存する
+ブラウザ上でキーマップを編集します。
+1. GitHubアカウントを連携させる  
+2. zmk-config-Enigma_01を連携させる  
+3. 該当する配列を選択する  
+4. キーマップを編集する  
+[Behaviors](https://zmk.dev/docs/keymaps/behaviors)や[Keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes)等のドキュメントに詳細が載っています。  
+5. キーマップを保存する
 
 ## ファームウェアをEnigma_01へ
 以下の手順で転送しましょう。
