@@ -14,7 +14,8 @@
 |:-|:-|
 |Enigma_01_a|1.0u配列|
 |Enigma_01_b|1.5u配列|
-|Enigma_01_c|2.0u配列|
+|Enigma_01_c|2.0u配列|  
+
 4. キーマップを編集する  
 [Behaviors](https://zmk.dev/docs/keymaps/behaviors)や[Keycodes](https://zmk.dev/docs/keymaps/list-of-keycodes)等のドキュメントに詳細が載っています。  
 5. キーマップを保存する
@@ -31,6 +32,7 @@
 |:-|:-|
 |Enigma_01 layout_a|1.0u配列|
 |Enigma_01 layout_b|1.5u配列|
-|Enigma_01 layout_c|2.0u配列|
+|Enigma_01 layout_c|2.0u配列|  
+
 5. 接続が解除、数秒後に復帰します
 これでファームウェアの転送は完了しました。
