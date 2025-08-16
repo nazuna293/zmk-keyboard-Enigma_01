@@ -80,9 +80,9 @@
 
         layer_1 {
             bindings = <
-            &kp K_UNDO    &kp K_UNDO
-&kp K_UNDO  &kp K_UNDO    &kp K_UNDO    &kp K_UNDO   &kp K_UNDO       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp PRINTSCREEN
-&kp LC(A)   &kp LC(S)     &kp LC(D)     &kp LC(F)    &kp K_UNDO       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp DELETE
+            &trans    &trans
+&trans  &trans    &trans    &trans   &trans       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp PRINTSCREEN
+&kp LC(A)   &kp LC(S)     &kp LC(D)     &kp LC(F)    &trans       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp DELETE
 &kp LC(Z)   &kp LC(X)     &kp LC(C)     &kp LC(V)    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW  &kp KP_DOT
 &kp LCTRL   &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp BACKSPACE                     &kp ENTER        &lt 2 ENTER      &kp LEFT      &kp DOWN_ARROW
             >;
@@ -92,11 +92,11 @@
 
         layer_2 {
             bindings = <
-                  &kp K_UNDO        &kp K_UNDO
+                  &trans        &trans
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
-&kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO
-&kp F11           &kp F12           &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO        &kp K_UNDO
-&kp LCTRL         &kp LEFT_WIN      &kp LEFT_ALT      &lt 1 SPACE       &kp BACKSPACE                       &kp ENTER         &lt 2 ENTER       &kp K_UNDO        &kp K_UNDO
+&kp F6            &kp F7            &kp F8            &kp F9            &kp F10           &trans        &trans        &trans        &trans        &trans
+&kp F11           &kp F12           &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+&kp LCTRL         &kp LEFT_WIN      &kp LEFT_ALT      &lt 1 SPACE       &kp BACKSPACE                       &kp ENTER         &lt 2 ENTER       &trans        &trans
             >;
 
             sensor-bindings = <&page_up_down>;
