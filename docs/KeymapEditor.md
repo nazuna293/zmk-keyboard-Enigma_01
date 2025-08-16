@@ -11,7 +11,10 @@
 <img src="img/KE_01.jpg">
 <img src="img/KE_02.jpg">
 <img src="img/KE_03.jpg">
+<img src="img/KE_04.jpg">
+<img src="img/KE_05.jpg">
 2. zmk-config-Enigma_01を連携させる  
+<img src="img/KE_06.jpg">
 3. 該当するKeyboard（配列）を選択する  
 
 |Keyboard|配列|  
