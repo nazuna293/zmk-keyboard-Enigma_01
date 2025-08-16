@@ -8,6 +8,7 @@
 ## KeymapEditorと連携
 ブラウザ上でキーマップを編集します。
 1. GitHubアカウントを連携させる  
+<img src="img/KE_01.jpg" width="250">
 2. zmk-config-Enigma_01を連携させる  
 3. 該当するKeyboard（配列）を選択する  
 
