@@ -38,10 +38,10 @@ layers:
   - '`'
   - {t: SPACE, h: '1'}
   - BACKSPACE
-  - ENTER
   - {t: ENTER, h: '2'}
-  - RIGHT SHIFT
-  - Z
+  - '3'
+  - '2'
+  - '1'
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -122,8 +122,8 @@ layers:
   - LEFT ALT
   - {t: SPACE, h: '1'}
   - BACKSPACE
-  - ENTER
-  - {t: ENTER, h: '2', type: held}
+  - {t: ENTER, type: held}
+  - {t: ENTER, h: '2'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '3':
