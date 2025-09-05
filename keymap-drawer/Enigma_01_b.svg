@@ -284,23 +284,24 @@ path.combo {
 <g transform="translate(350, 252)" class="key keypos-37">
 <rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-</g>
-<g transform="translate(420, 252)" class="key keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ENTER</text>
 <a href="#x_x">
 <text x="0" y="24" class="key hold layer-activator">2</text>
 </a></g>
+<g transform="translate(420, 252)" class="key keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">3</text>
+</a></g>
 <g transform="translate(476, 252)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">RIGHT</tspan><tspan x="0" dy="1.2em">SHIFT</tspan>
-</text>
-</g>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">2</text>
+</a></g>
 <g transform="translate(532, 252)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Z</text>
-</g>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">1</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 336)" class="layer-1">
@@ -667,15 +668,15 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 78%">BACKSPACE</tspan></text>
 </g>
-<g transform="translate(350, 252)" class="key keypos-37">
-<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ENTER</text>
-</g>
-<g transform="translate(420, 252)" class="key held keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(350, 252)" class="key held keypos-37">
+<rect rx="6" ry="6" x="-40" y="-26" width="80" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap">ENTER</text>
+</g>
+<g transform="translate(420, 252)" class="key keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">ENTER</text>
 <a href="#x_x">
-<text x="0" y="24" class="key held hold layer-activator">2</text>
+<text x="0" y="24" class="key hold layer-activator">2</text>
 </a></g>
 <g transform="translate(476, 252)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
