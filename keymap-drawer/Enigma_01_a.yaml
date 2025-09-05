@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: Enigma_01_a}
 layers:
   Default_US:
-  - '3'
-  - '2'
+  - {t: Sft+TAB, h: LEFT ALT}
+  - {t: TAB, h: LALT}
   - '&tp_tab_ctrl_q'
   - W
   - E
