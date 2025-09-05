@@ -110,7 +110,7 @@
 &tp_tab_ctrl_q  &kp W         &kp E      &kp R        &kp T          &kp Y          &kp U        &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D      &kp F        &kp G          &kp H          &kp J        &kp K      &kp L    &kp MINUS
 &kp Z           &kp X         &kp C      &kp V        &kp B          &kp N          &kp M        &kp COMMA  &kp DOT  &kp SLASH
-&tp_shift_ctrl  &kp LEFT_WIN  &kp GRAVE  &lt 2 SPACE  &kp BACKSPACE  &kp BACKSPACE  &lt 3 ENTER  &kp N3     &kp N2   &kp N1
+&tp_shift_ctrl  &kp LEFT_WIN  &kp GRAVE  &lt 2 SPACE  &kp BACKSPACE  &kp BACKSPACE  &lt 3 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU  &kp LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&scroll_up_down>;
