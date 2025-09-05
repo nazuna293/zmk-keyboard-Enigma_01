@@ -40,9 +40,9 @@ layers:
   - BACKSPACE
   - ENTER
   - {t: ENTER, h: '2'}
-  - RIGHT SHIFT
-  - LANG ZENKAKUHANKAKU
-  - Z
+  - '3'
+  - '2'
+  - '1'
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
