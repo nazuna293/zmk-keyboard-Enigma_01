@@ -1,5 +1,7 @@
 #include "Enigma_01.overlay"
 
+/ {
     chosen {
         zmk,physical-layout = &layout_b;
     };
+};
