@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: Enigma_01_a}
 layers:
-  default:
+  Default_US:
   - '3'
   - '2'
   - '&tp_tab_ctrl_q'
@@ -36,14 +36,57 @@ layers:
   - '&tp_shift_ctrl'
   - LEFT WIN
   - '`'
-  - {t: SPACE, h: '1'}
+  - {t: SPACE, h: Ctrl+_Num_}
   - BACKSPACE
-  - ENTER
-  - {t: ENTER, h: '2'}
+  - BACKSPACE
+  - {t: ENTER, h: Shift+_Mouse_}
   - '3'
   - '2'
   - '1'
-  '1':
+  Default_JIS:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&tp_tab_ctrl_q'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&tp_shift_ctrl'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -79,14 +122,14 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: SPACE, h: '1', type: held}
+  - {t: SPACE, h: Ctrl+_Num_, type: held}
   - BACKSPACE
   - ENTER
-  - {t: ENTER, h: '2'}
+  - {t: ENTER, h: Shift+_Mouse_}
   - LEFT
   - DOWN ARROW
   - RIGHT ARROW
-  '2':
+  Shift+_Mouse_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+1
@@ -122,14 +165,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: '1'}
+  - {t: SPACE, h: Ctrl+_Num_}
   - BACKSPACE
   - ENTER
-  - {t: ENTER, h: '2', type: held}
+  - {t: ENTER, h: Shift+_Mouse_, type: held}
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  '3':
+  F_KEY:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F1
@@ -164,7 +207,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT ALT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
