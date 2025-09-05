@@ -17,7 +17,7 @@
                 <&gpio1 12 GPIO_ACTIVE_HIGH>;
     };
 
-    transform_a: transform {
+    transform_a: transform_a {
         compatible = "zmk,matrix-transform";
         rows = <7>;
         columns = <7>;
@@ -30,7 +30,7 @@
         >;
     };
 
-    transform_bc: transform {
+    transform_bc: transform_bc {
         compatible = "zmk,matrix-transform";
         rows = <7>;
         columns = <7>;
