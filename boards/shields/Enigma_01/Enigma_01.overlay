@@ -63,7 +63,6 @@
 
     chosen {
         zmk,kscan = &default_kscan;
-        zmk,physical-layout = &layout_a;  // layout_a = 1.0配列 layout_b = 1.5配列 layout_c = 2.0配列
         zmk,studio-rpc = &studio_usb;
     };
 };
