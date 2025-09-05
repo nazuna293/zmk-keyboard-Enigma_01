@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: Enigma_01_c}
 layers:
   default:
-  - '5'
+  - '1'
   - '6'
   - {t: Q, h: TAB}
   - W
