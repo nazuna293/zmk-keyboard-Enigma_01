@@ -42,7 +42,7 @@ layers:
   - {t: ENTER, h: '2'}
   - RIGHT SHIFT
   - LANG ZENKAKUHANKAKU
-  - Sft+INTERNATIONAL 1
+  - Z
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

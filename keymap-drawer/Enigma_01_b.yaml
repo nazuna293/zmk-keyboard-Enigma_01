@@ -41,7 +41,7 @@ layers:
   - ENTER
   - {t: ENTER, h: '2'}
   - RIGHT SHIFT
-  - LANG ZENKAKUHANKAKU
+  - Z
   '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
