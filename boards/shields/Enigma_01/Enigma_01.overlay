@@ -4,7 +4,7 @@
 #include "Enigma_01.dtsi"
 
 / {
-    kscan_v0: kscan_v0 {
+    default_kscan: kscan {
         compatible = "zmk,kscan-gpio-charlieplex";
         wakeup-source;
         interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
@@ -61,7 +61,7 @@
     };
 
     chosen {
-        zmk,kscan = &kscan_v0;
+        zmk,kscan = &default_kscan;
         zmk,physical-layout = &layout_a;  // layout_a = 1.0配列 layout_b = 1.5配列 layout_c = 2.0配列
         zmk,studio-rpc = &studio_usb;
     };
