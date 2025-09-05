@@ -118,9 +118,9 @@
 
         Ctrl+_Num_ {
             bindings = <
-           &trans        &trans
-&trans     &trans        &trans        &trans       &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
-&kp LC(A)  &kp LC(S)     &kp LC(D)     &kp LC(F)    &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
+           &none        &none
+&none     &none        &none        &none       &none           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
+&kp LC(A)  &kp LC(S)     &kp LC(D)     &kp LC(F)    &none           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
 &kp LC(Z)  &kp LC(X)     &kp LC(C)     &kp LC(V)    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE    &kp ENTER        &lt 3 ENTER      &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
@@ -130,11 +130,11 @@
 
         Shift+_Mouse_ {
             bindings = <
-                  &trans            &trans
+                  &none            &none
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
-&trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
-&trans            &trans            &trans            &trans            &trans            &trans            &trans            &mkp MB1          &mmv MOVE_UP      &mkp MB2
-&trans            &trans            &trans            &lt 2 SPACE       &kp BACKSPACE     &kp ENTER         &lt 3 ENTER       &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+&none            &none            &none            &none            &none            &none            &none            &none            &none            &none
+&none            &none            &none            &none            &none            &none            &none            &mkp MB1          &mmv MOVE_UP      &mkp MB2
+&none            &none            &none            &lt 2 SPACE       &kp BACKSPACE     &kp ENTER         &lt 3 ENTER       &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
             >;
 
             sensor-bindings = <&page_up_down>;
@@ -142,11 +142,11 @@
 
         F_KEY {
             bindings = <
-         &trans   &trans
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans  &trans  &trans  &trans  &trans
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &trans
-&kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
-&trans   &trans   &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+         &none   &none
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &none  &none  &none  &none  &none
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none  &none  &none  &none  &none
+&kp F11  &kp F12  &none  &none  &none   &none  &none  &none  &none  &none
+&none   &none   &none  &none  &none   &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_left_right>;
@@ -155,10 +155,10 @@
         layer_4 {
             bindings = <
               &bt BT_CLR    &bt BT_CLR_ALL
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans          &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans          &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans          &trans        &trans        &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none
+&none        &none        &none          &none        &none        &none  &none  &none  &none  &none
+&none        &none        &none          &none        &none        &none  &none  &none  &none  &none
+&none        &none        &none          &none        &none        &none  &none  &none  &none  &none
             >;
         };
     };
