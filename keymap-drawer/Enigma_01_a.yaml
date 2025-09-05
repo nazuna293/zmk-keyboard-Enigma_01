@@ -83,9 +83,9 @@ layers:
   - BACKSPACE
   - BACKSPACE
   - {t: ENTER, h: Shift+_Mouse_}
-  - '3'
-  - '2'
-  - '1'
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  - Sft+INTERNATIONAL 1
   Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
