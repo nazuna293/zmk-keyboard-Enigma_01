@@ -40,9 +40,9 @@ layers:
   - BACKSPACE
   - BACKSPACE
   - {t: ENTER, h: Shift+_Mouse_}
-  - '3'
-  - '2'
-  - '1'
+  - RIGHT SHIFT
+  - LANG ZENKAKUHANKAKU
+  - Sft+INTERNATIONAL 1
   Default_JIS:
   - '3'
   - '2'
