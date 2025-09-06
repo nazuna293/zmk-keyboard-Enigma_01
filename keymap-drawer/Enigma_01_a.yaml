@@ -44,8 +44,8 @@ layers:
   - LANG ZENKAKUHANKAKU
   - Sft+INTERNATIONAL 1
   Default_JIS:
-  - '3'
-  - '2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&tp_tab_ctrl_q'
   - W
   - E
@@ -87,8 +87,8 @@ layers:
   - LANG ZENKAKUHANKAKU
   - Sft+INTERNATIONAL 1
   Ctrl+_Num_:
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
