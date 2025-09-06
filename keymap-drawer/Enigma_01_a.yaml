@@ -119,9 +119,9 @@ layers:
   - KP 3
   - UP ARROW
   - KP DOT
-  - LCTRL
-  - LEFT WIN
-  - LEFT ALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -142,18 +142,18 @@ layers:
   - Sft+8
   - Sft+9
   - Sft+0
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
   - ''
   - ''
   - ''
@@ -162,9 +162,9 @@ layers:
   - '&mkp MB1'
   - '&mmv MOVE_UP'
   - '&mkp MB2'
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -172,49 +172,6 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  F_KEY:
-  - ''
-  - ''
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F11
-  - F12
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
   '4':
   - BT CLR
   - BT CLR ALL
