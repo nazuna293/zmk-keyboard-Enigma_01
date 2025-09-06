@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: Enigma_01_a}
 layers:
   Default_US:
-  - {t: Sft+TAB, h: LEFT ALT}
-  - {t: TAB, h: LALT}
+  - '&tp_hz_mo_kn'
+  - '&tp_f7_mo_f8'
   - '&tp_tab_ctrl_q'
   - W
   - E
@@ -44,8 +44,8 @@ layers:
   - LANG ZENKAKUHANKAKU
   - Sft+INTERNATIONAL 1
   Default_JIS:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&tp_hz_mo_kn'
+  - '&tp_f7_mo_f8'
   - '&tp_tab_ctrl_q'
   - W
   - E
