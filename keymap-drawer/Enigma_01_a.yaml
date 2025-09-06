@@ -248,19 +248,16 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&bootloader'
   - ''
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
 combos:
-- p: [35, 38]
+- p: [36, 35]
   k: '4'
-- p: [32, 33]
-  k: '&bootloader'
-  l: ['4']
