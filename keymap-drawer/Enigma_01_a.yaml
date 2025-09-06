@@ -261,6 +261,6 @@ layers:
 combos:
 - p: [35, 38]
   k: '4'
-- p: [40, 41]
+- p: [32, 33]
   k: '&bootloader'
   l: ['4']
