@@ -90,7 +90,7 @@
 
         bootloader {
             bindings = <&bootloader>;
-            key-positions = <40 41>;
+            key-positions = <32 33>;
             layers = <5>;
         };
     };
