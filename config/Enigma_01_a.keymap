@@ -84,7 +84,7 @@
         compatible = "zmk,combos";
 
         mo5 {
-            bindings = <&mo 5>;
+            bindings = <&mo 4>;
             key-positions = <36 35>;
         };
     };
@@ -118,11 +118,11 @@
 
         Ctrl+_Num_ {
             bindings = <
-           &trans        &trans
-&none      &none         &none         &none      &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
-&kp LC(A)  &kp LC(S)     &kp LC(D)     &kp LC(F)  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
-&kp LC(Z)  &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &trans     &trans           &trans           &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
+           &trans     &trans
+&none      &none      &none      &none      &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
+&trans     &trans     &trans     &trans     &trans           &trans           &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -132,21 +132,9 @@
             bindings = <
                   &none             &none
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
-&none             &none             &none             &none             &none             &none             &none             &none             &none             &none
-&none             &none             &none             &none             &none             &none             &none             &mkp MB1          &mmv MOVE_UP      &mkp MB2
-&none             &none             &none             &trans            &trans            &trans            &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        F_KEY {
-            bindings = <
-         &none    &none
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &none   &none   &none  &none  &none
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &none   &none   &none  &none  &none
-&kp F11  &kp F12  &none   &none   &none    &none   &none   &none  &none  &none
-&none    &none    &none   &trans  &trans   &trans  &trans  &none  &none  &none
+&kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &kp F6            &kp F7            &kp F8            &kp F9            &kp F10
+&kp F11           &kp F12           &none             &none             &none             &none             &none             &mkp MB1          &mmv MOVE_UP      &mkp MB2
+&trans            &trans            &trans            &trans            &trans            &trans            &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
             >;
 
             sensor-bindings = <&scroll_up_down>;
