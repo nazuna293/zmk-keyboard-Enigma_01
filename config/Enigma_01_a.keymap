@@ -87,6 +87,12 @@
             bindings = <&mo 5>;
             key-positions = <35 38>;
         };
+
+        bootloader {
+            bindings = <&bootloader>;
+            key-positions = <40 41>;
+            layers = <5>;
+        };
     };
 
     keymap {
