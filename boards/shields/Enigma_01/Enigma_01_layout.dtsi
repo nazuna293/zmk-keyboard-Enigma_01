@@ -6,7 +6,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Enigma_01 ThumbKey 1.0u";
         transform = <&transform_a>;
-        kscan = <&default_kscan>;
+        kscan = <&kscan_0>;
 
         keys = <
             &key_physical_attrs 100 100 100   0 0 0 0  // RC(6,4)
@@ -59,7 +59,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Enigma_01 ThumbKey 1.5u";
         transform = <&transform_bc>;
-        kscan = <&default_kscan>;
+        kscan = <&kscan_0>;
 
         keys = <
             &key_physical_attrs 100 100 100   0 0 0 0  // RC(6,4)
@@ -111,7 +111,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Enigma_01 ThumbKey 2.0u";
         transform = <&transform_bc>;
-        kscan = <&default_kscan>;
+        kscan = <&kscan_0>;
 
         keys = <
             &key_physical_attrs 100 100 100   0 0 0 0  // RC(6,4)
