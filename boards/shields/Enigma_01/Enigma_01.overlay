@@ -4,7 +4,10 @@
 #include "Enigma_01.dtsi"
 
 / {
-    default_kscan {
+    default_kscan: kscan {
+        compatible = "zmk,kscan-gpio-charlieplex";
+        wakeup-source;
+        interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
         gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>,
                 <&gpio0 4 GPIO_ACTIVE_HIGH>,
                 <&gpio0 5 GPIO_ACTIVE_HIGH>,
