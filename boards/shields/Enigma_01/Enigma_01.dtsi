@@ -1,12 +1,6 @@
 #include <physical_layouts.dtsi>
 
 / {
-    default_kscan: kscan {
-        compatible = "zmk,kscan-gpio-charlieplex";
-        wakeup-source;
-        interrupt-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-    };
-
     // 親指キー1.0u
     layout_a: layout_a {
         compatible = "zmk,physical-layout";
