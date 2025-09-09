@@ -1,7 +1,11 @@
-#include "Enigma_01.overlay"
+#include "Enigma_01.dtsi"
 
 / {
     chosen {
         zmk,physical-layout = &layout_b;
+    };
+
+    encoder_0 {
+        status = "okay";
     };
 };
