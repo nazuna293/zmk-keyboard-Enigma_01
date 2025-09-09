@@ -1,8 +1,0 @@
-#include <dt-bindings/zmk/matrix_transform.h>
-#include "Enigma_01.dtsi"
-
-/ {
-    encoder_0 {
-        status = "okay";
-    };
-};
