@@ -8,20 +8,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 / {
-    // zmk-listeners
-    layer_listeners {
-        compatible = "zmk,layer-listeners";
 
-        release_alt {
-            layers = <to_ALT>;
-            bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
-        };
-
-        release_ctrl {
-            layers = <to_CTRL>;
-            bindings = <&kt_on LCTRL &kt_off LCTRL>;
-        };
-    };
 
     macros {
         // zmk-listeners
@@ -83,6 +70,17 @@
             toggle-mode = "off";
         };
 
+        // zmk-listeners
+        lt_to_0: lt_to_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_to_0";
+            bindings = <&mo_to_0>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
+        };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
