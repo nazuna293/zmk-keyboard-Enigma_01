@@ -1,48 +1,5 @@
 layout: {zmk_keyboard: Enigma_01_a}
 layers:
-  Default_US:
-  - '&tp_hz_mo_kn'
-  - '&tp_f7_mo_f8'
-  - '&tp_tab_ctrl_q'
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - '-'
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - '&tp_shift_ctrl'
-  - LEFT WIN
-  - '`'
-  - {t: SPACE, h: Ctrl+_Num_}
-  - BACKSPACE
-  - BACKSPACE
-  - {t: ENTER, h: Shift+_Mouse_}
-  - RIGHT SHIFT
-  - LANG ZENKAKUHANKAKU
-  - Sft+INTERNATIONAL 1
   Default_JIS:
   - '&tp_hz_mo_kn'
   - '&tp_f7_mo_f8'
@@ -78,14 +35,57 @@ layers:
   - /
   - '&tp_shift_ctrl'
   - LEFT WIN
-  - '`'
+  - LEFT ALT
+  - {t: SPACE, h: Ctrl+_Num_}
+  - BACKSPACE
+  - BACKSPACE
+  - {t: ENTER, h: Shift+_Mouse_}
+  - RIGHT SHIFT
+  - ''
+  - Sft+INTERNATIONAL 1
+  Default_:
+  - ''
+  - ''
+  - '&tp_tab_ctrl_q'
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - '&tp_shift_ctrl'
+  - LEFT WIN
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RIGHT SHIFT
-  - LANG ZENKAKUHANKAKU
-  - Sft+INTERNATIONAL 1
+  - ''
+  - ''
   Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
