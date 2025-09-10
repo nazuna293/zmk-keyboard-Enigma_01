@@ -204,14 +204,14 @@ layers:
   - '&bootloader'
   - ''
   - ''
-  - {type: held}
-  - {type: held}
   - ''
+  - {type: held}
+  - {type: held}
   - ''
   - ''
   - ''
   to_Alt: [Alt+TAB, TAB, '', '', '', F4, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', UP, '', '', '', '', '', '',
     '', LEFT, DOWN, RIGHT]
 combos:
-- p: [36, 35]
+- p: [36, 37]
   k: setting
