@@ -8,7 +8,15 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 / {
+    // zmk-listeners
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
 
+        release_alt {
+            layers = <to_ALT>;
+            bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
+        };
+    };
 
     macros {
         // zmk-listeners
