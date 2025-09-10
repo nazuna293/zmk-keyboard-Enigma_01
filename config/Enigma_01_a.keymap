@@ -16,6 +16,11 @@
             layers = <to_ALT>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
         };
+
+        release_ctrl {
+            layers = <to_CTRL>;
+            bindings = <&kt_on LCTRL &kt_off LCTRL>;
+        };
     };
 
     macros {
