@@ -138,32 +138,32 @@
             tap-ms = <20>;
         };
 
-        tp_tab_ctrl_q: tp_tab_ctrl_q {
+        tp1: tab_ctrl_q {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_TAB_CTRL_Q";
+            label = "tab_ctrl_q";
             #binding-cells = <0>;
             bindings = <&mt LCTRL TAB>, <&kp Q>;
         };
 
-        tp_shift_ctrl: tp_shift_ctrl {
+        tp2: shift_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_SHIFT_CTRL";
+            label = "shift_ctrl";
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp LCTRL>;
         };
 
-        tp_f7_mo_f8: tp_f7_mo_f8 {
+        tp4: f7_toALT_f8 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_F7_MO_F8";
+            label = "f7_toALT_f8";
             #binding-cells = <0>;
             bindings = <&lt_to_0 5 F7>, <&kp F8>;
         };
 
-        tp_hz_mo_kn: tp_hz_mo_kn {
+        tp3: hz_toALT {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_HZ_MO_KN";
+            label = "hz_toALT";
             #binding-cells = <0>;
-            bindings = <&lt_to_0 5 LANG_ZENKAKUHANKAKU>;
+            bindings = <&lt_to_0 5 GRAVE>;
         };
     };
 
@@ -181,11 +181,11 @@
 
         Default_JIS {
             bindings = <
-                &tp_hz_mo_kn  &tp_f7_mo_f8
-&tp_tab_ctrl_q  &kp W         &kp E         &kp R        &kp T          &kp Y          &kp U        &kp I            &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F        &kp G          &kp H          &kp J        &kp K            &kp L    &kp MINUS
-&kp Z           &kp X         &kp C         &kp V        &kp B          &kp N          &kp M        &kp COMMA        &kp DOT  &kp SLASH
-&tp_shift_ctrl  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp BACKSPACE  &lt 3 ENTER  &kp RIGHT_SHIFT  &none    &kp LS(INTERNATIONAL_1)
+       &tp3          &tp4
+&tp1   &kp W         &kp E         &kp R        &kp T          &kp Y          &kp U        &kp I            &kp O    &kp P
+&kp A  &kp S         &kp D         &kp F        &kp G          &kp H          &kp J        &kp K            &kp L    &kp MINUS
+&kp Z  &kp X         &kp C         &kp V        &kp B          &kp N          &kp M        &kp COMMA        &kp DOT  &kp SLASH
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp BACKSPACE  &lt 3 ENTER  &kp RIGHT_SHIFT  &none    &kp LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -193,11 +193,11 @@
 
         Default_ {
             bindings = <
-                &none         &none
-&tp_tab_ctrl_q  &kp W         &kp E         &kp R   &kp T   &kp Y   &kp U   &kp I            &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F   &kp G   &kp H   &kp J   &kp K            &kp L    &kp MINUS
-&kp Z           &kp X         &kp C         &kp V   &kp B   &kp N   &kp M   &kp COMMA        &kp DOT  &kp SLASH
-&tp_shift_ctrl  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &none    &none
+       &none         &none
+&tp1   &kp W         &kp E         &kp R   &kp T   &kp Y   &kp U   &kp I            &kp O    &kp P
+&kp A  &kp S         &kp D         &kp F   &kp G   &kp H   &kp J   &kp K            &kp L    &kp MINUS
+&kp Z  &kp X         &kp C         &kp V   &kp B   &kp N   &kp M   &kp COMMA        &kp DOT  &kp SLASH
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &none    &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
