@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/kot149
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: ssbb
+      url-base: https://github.com/ssbb
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,5 +19,8 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+    - name: zmk-listeners
+      remote: ssbb
+      revision: v1
   self:
     path: config
