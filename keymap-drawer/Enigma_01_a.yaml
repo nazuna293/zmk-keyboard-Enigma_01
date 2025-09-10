@@ -78,7 +78,7 @@ layers:
   - /
   - '&tp_shift_ctrl'
   - LEFT WIN
-  - ''
+  - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
