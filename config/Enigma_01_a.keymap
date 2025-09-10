@@ -13,13 +13,8 @@
         compatible = "zmk,layer-listeners";
 
         release_alt {
-            layers = <to_ALT>;
+            layers = <5>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
-        };
-
-        release_ctrl {
-            layers = <to_CTRL>;
-            bindings = <&kt_on LCTRL &kt_off LCTRL>;
         };
     };
 
@@ -51,6 +46,7 @@
 
             label = "MO_to_0";
         };
+    };
 
     behaviors {
         // Layout shift
