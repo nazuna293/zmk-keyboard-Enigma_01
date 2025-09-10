@@ -172,7 +172,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  '4':
+  setting:
   - BT CLR
   - BT CLR ALL
   - {t: BT, h: '0'}
@@ -215,7 +215,7 @@ layers:
   - ''
   - ''
   - ''
-  '5':
+  to_Alt:
   - Alt+TAB
   - TAB
   - {t: ▽, type: trans}
@@ -260,4 +260,4 @@ layers:
   - RIGHT
 combos:
 - p: [36, 35]
-  k: '4'
+  k: setting
