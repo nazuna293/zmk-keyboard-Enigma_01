@@ -129,15 +129,15 @@ path.combo {
 <g transform="translate(0, 56)">
 <g transform="translate(84, 28)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tp_hz_mo_…</tspan></text>
+<text x="0" y="0" class="key tap">&amp;tp3</text>
 </g>
 <g transform="translate(140, 28)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tp_f7_mo_…</tspan></text>
+<text x="0" y="0" class="key tap">&amp;tp4</text>
 </g>
 <g transform="translate(28, 84)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tp_tab_ct…</tspan></text>
+<text x="0" y="0" class="key tap">&amp;tp1</text>
 </g>
 <g transform="translate(84, 84)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -257,7 +257,7 @@ path.combo {
 </g>
 <g transform="translate(28, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tp_shift_…</tspan></text>
+<text x="0" y="0" class="key tap">&amp;tp2</text>
 </g>
 <g transform="translate(84, 252)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -324,7 +324,7 @@ path.combo {
 </g>
 <g transform="translate(28, 84)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tp_tab_ct…</tspan></text>
+<text x="0" y="0" class="key tap">&amp;tp1</text>
 </g>
 <g transform="translate(84, 84)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -444,7 +444,7 @@ path.combo {
 </g>
 <g transform="translate(28, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tp_shift_…</tspan></text>
+<text x="0" y="0" class="key tap">&amp;tp2</text>
 </g>
 <g transform="translate(84, 252)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
