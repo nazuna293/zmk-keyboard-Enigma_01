@@ -14,12 +14,22 @@
 |編集項目| マクロ等も編集できる|標準的な編集ができる|  
 
 ## 初期キーマップ
-|tap dance|tap|hold|2tap|tap hold|
+### Tap Dance
+|name|tap|hold|2tap|tap hold|
 |:-:|:-:|:-:|:-:|:-:|
 |tp1|Tab|Ctrl|Q||
 |tp2||Shift||Ctrl|
 |tp3|半／全|layer to_ALT|||
 |tp4|F7|layer to_ALT|F8||
+
+### rotary encoder
+|name|left|right|
+|:-:|:-:|:-:|
+|scroll_up_down|scroll up|scroll down|
+|scroll_left_right|scroll left|scroll right|
+|arrow_up_down|up arrow|down arrow|
+|arrow_left_right|left arrow|right arrow|
+|page_up_down|page up|page down|
 
 ※to_ALTレイヤーに推移している間はALTキーが押されている状態になっています。
 
