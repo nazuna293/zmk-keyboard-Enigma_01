@@ -15,7 +15,7 @@
 
 ## 初期キーマップ
 |tap dance|tap|hold|2tap|tap hold|
-|:-:|:-|:-|:-|:-|
+|:-:|:-:|:-:|:-:|:-:|
 |tp1|Tab|Ctrl|Q||
 |tp2||Shift||Ctrl|
 |tp3|半／全|layer to_ALT|||
