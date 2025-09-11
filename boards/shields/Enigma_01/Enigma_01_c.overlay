@@ -1,11 +1,5 @@
 #include "Enigma_01.dtsi"
 
-/ {
-    chosen {
-        zmk,physical-layout = &layout_c;
-    };
-
-    encoder_0 {
-        status = "okay";
-    };
+&chosen {
+    zmk,physical-layout = &layout_c;
 };
