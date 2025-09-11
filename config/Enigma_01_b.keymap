@@ -182,10 +182,10 @@
         Default_JIS {
             bindings = <
        &tp3          &tp4
-&tp1   &kp W         &kp E         &kp R        &kp T          &kp Y          &kp U        &kp I            &kp O    &kp P
-&kp A  &kp S         &kp D         &kp F        &kp G          &kp H          &kp J        &kp K            &kp L    &kp MINUS
-&kp Z  &kp X         &kp C         &kp V        &kp B          &kp N          &kp M        &kp COMMA        &kp DOT  &kp SLASH
-&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &lt 3 ENTER  &kp RIGHT_SHIFT  &none    &kp LS(INTERNATIONAL_1)
+&tp1   &kp W         &kp E         &kp R  &kp T          &kp Y  &kp U        &kp I            &kp O    &kp P
+&kp A  &kp S         &kp D         &kp F  &kp G          &kp H  &kp J        &kp K            &kp L    &kp MINUS
+&kp Z  &kp X         &kp C         &kp V  &kp B          &kp N  &kp M        &kp COMMA        &kp DOT  &kp SLASH
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &kp BACKSPACE         &lt 3 ENTER  &kp RIGHT_SHIFT  &none    &kp LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -194,10 +194,10 @@
         Default_ {
             bindings = <
        &none         &none
-&tp1   &kp W         &kp E         &kp R   &kp T   &kp Y   &kp U   &kp I            &kp O    &kp P
-&kp A  &kp S         &kp D         &kp F   &kp G   &kp H   &kp J   &kp K            &kp L    &kp MINUS
-&kp Z  &kp X         &kp C         &kp V   &kp B   &kp N   &kp M   &kp COMMA        &kp DOT  &kp SLASH
-&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &kp RIGHT_SHIFT  &none    &none
+&tp1   &kp W         &kp E         &kp R   &kp T   &kp Y  &kp U   &kp I            &kp O    &kp P
+&kp A  &kp S         &kp D         &kp F   &kp G   &kp H  &kp J   &kp K            &kp L    &kp MINUS
+&kp Z  &kp X         &kp C         &kp V   &kp B   &kp N  &kp M   &kp COMMA        &kp DOT  &kp SLASH
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans         &trans  &kp RIGHT_SHIFT  &none    &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -209,7 +209,7 @@
 &none      &none      &none      &none      &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
-&trans     &trans     &trans     &trans     &trans           &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans     &trans     &trans     &trans     &trans                            &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -221,7 +221,7 @@
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
 &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &kp F6            &kp F7            &kp F8            &kp F9            &kp F10
 &kp F11           &kp F12           &none             &none             &none             &none             &none             &mkp MB1          &mmv MOVE_UP      &mkp MB2
-&trans            &trans            &trans            &trans            &trans            &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+&trans            &trans            &trans            &trans            &trans                              &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -233,7 +233,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none
 &none         &none         &none           &none         &none         &none  &none  &none  &none  &none
 &none         &none         &none           &none         &none         &none  &none  &none  &none  &none
-&bootloader   &none         &none           &none         &none         &none  &none  &none  &none
+&bootloader   &none         &none           &none         &none                &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -245,7 +245,7 @@
 &none  &none        &none    &kp F4  &none  &none  &none  &none     &none     &none
 &none  &none        &none    &none   &none  &none  &none  &none     &none     &none
 &none  &none        &none    &none   &none  &none  &none  &none     &kp UP    &none
-&none  &none        &none    &none   &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT
+&none  &none        &none    &none   &none         &none  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
     };
