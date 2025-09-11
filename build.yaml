@@ -1,18 +1,18 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: Enigma_01_a rgbled_adapter
+    shield: Enigma_01 Enigma_01_a rgbled_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: Enigma_01 layout_a
     
   - board: seeeduino_xiao_ble
-    shield: Enigma_01_b rgbled_adapter
+    shield: Enigma_01 Enigma_01_b rgbled_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: Enigma_01 layout_b
     
   - board: seeeduino_xiao_ble
-    shield: Enigma_01_c rgbled_adapter
+    shield: Enigma_01 Enigma_01_c rgbled_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: Enigma_01 layout_c
