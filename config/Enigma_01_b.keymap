@@ -8,8 +8,50 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 / {
+    // zmk-listeners
+
+    layer_listeners {
+        compatible = "zmk,layer-listeners";
+
+        release_alt {
+            layers = <5>;
+            bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
+        };
+    };
+
+    macros {
+        // zmk-listeners
+
+        to_kp: to_kp
+            compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>;
+            bindings = <&macro_param_1to1 &to MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
+            label = "to_kp";
+        };
+
+        // zmk-listeners
+
+        mo_to_0: mo_to_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&to 0>;
+
+            label = "MO_to_0";
+        };
+    };
+
     behaviors {
-        // Keep the original key_press behavior for ZMK core components
+        // Layout shift
 
         original_key_press: original_key_press {
             compatible = "zmk,behavior-key-press";
@@ -17,12 +59,43 @@
             label = "KEY_PRESS";
         };
 
-        // Override the existing &kp behavior to use our custom implementation
+        // Layout shift
 
         kp: key_press {
             compatible = "zmk,behavior-layout-shift-key-press";
             #binding-cells = <1>;
             label = "LAYOUT_SHIFT_KEY_PRESS";
+        };
+
+        // zmk-listeners
+
+        kt_on: key_toggle_on_only {
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            display-name = "Key Toggle On";
+            toggle-mode = "on";
+        };
+
+        // zmk-listeners
+
+        kt_off: key_toggle_off_only {
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            display-name = "Key Toggle Off";
+            toggle-mode = "off";
+        };
+
+        // zmk-listeners
+
+        lt_to_0: lt_to_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_to_0";
+            bindings = <&mo_to_0>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "balanced";
         };
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
@@ -65,32 +138,32 @@
             tap-ms = <20>;
         };
 
-        tp_tab_ctrl_q: tp_tab_ctrl_q {
+        tp1: tab_ctrl_q {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_TAB_CTRL_Q";
+            label = "tab_ctrl_q";
             #binding-cells = <0>;
             bindings = <&mt LCTRL TAB>, <&kp Q>;
         };
 
-        tp_shift_ctrl: tp_shift_ctrl {
+        tp2: shift_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_SHIFT_CTRL";
+            label = "shift_ctrl";
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&kp LCTRL>;
         };
 
-        tp_f7_mo_f8: tp_f7_mo_f8 {
+        tp4: f7_toALT_f8 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_F7_MO_F8";
+            label = "f7_toALT_f8";
             #binding-cells = <0>;
-            bindings = <&lt 5 F7>, <&kp F8>;
+            bindings = <&lt_to_0 5 F7>, <&kp F8>;
         };
 
-        tp_hz_mo_kn: tp_hz_mo_kn {
+        tp3: hz_toALT {
             compatible = "zmk,behavior-tap-dance";
-            label = "TP_HZ_MO_KN";
+            label = "hz_toALT";
             #binding-cells = <0>;
-            bindings = <&lt 5 TILDE>;
+            bindings = <&lt_to_0 5 GRAVE>;
         };
     };
 
@@ -99,32 +172,32 @@
 
         mo_setting {
             bindings = <&mo 4>;
-            key-positions = <36 37>;
+            key-positions = <36 35>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        Default_US {
+        Default_JIS {
             bindings = <
-                &tp_hz_mo_kn  &tp_f7_mo_f8
-&tp_tab_ctrl_q  &kp W         &kp E         &kp R        &kp T          &kp Y  &kp U        &kp I            &kp O                    &kp P
-&kp A           &kp S         &kp D         &kp F        &kp G          &kp H  &kp J        &kp K            &kp L                    &kp MINUS
-&kp Z           &kp X         &kp C         &kp V        &kp B          &kp N  &kp M        &kp COMMA        &kp DOT                  &kp SLASH
-&tp_shift_ctrl  &kp LEFT_WIN  &kp GRAVE     &lt 2 SPACE  &kp BACKSPACE         &lt 3 ENTER  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU  &kp LS(INTERNATIONAL_1)
+       &tp3          &tp4
+&tp1   &kp W         &kp E         &kp R        &kp T          &kp Y          &kp U        &kp I            &kp O    &kp P
+&kp A  &kp S         &kp D         &kp F        &kp G          &kp H          &kp J        &kp K            &kp L    &kp MINUS
+&kp Z  &kp X         &kp C         &kp V        &kp B          &kp N          &kp M        &kp COMMA        &kp DOT  &kp SLASH
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &lt 3 ENTER  &kp RIGHT_SHIFT  &none    &kp LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        Default_JIS {
+        Default_ {
             bindings = <
-                &tp_hz_mo_kn  &tp_f7_mo_f8
-&tp_tab_ctrl_q  &kp W         &kp E         &kp R   &kp T   &kp Y  &kp U   &kp I            &kp O                    &kp P
-&kp A           &kp S         &kp D         &kp F   &kp G   &kp H  &kp J   &kp K            &kp L                    &kp MINUS
-&kp Z           &kp X         &kp C         &kp V   &kp B   &kp N  &kp M   &kp COMMA        &kp DOT                  &kp SLASH
-&tp_shift_ctrl  &kp LEFT_WIN  &kp GRAVE     &trans  &trans         &trans  &kp RIGHT_SHIFT  &kp LANG_ZENKAKUHANKAKU  &kp LS(INTERNATIONAL_1)
+       &none         &none
+&tp1   &kp W         &kp E         &kp R   &kp T   &kp Y   &kp U   &kp I            &kp O    &kp P
+&kp A  &kp S         &kp D         &kp F   &kp G   &kp H   &kp J   &kp K            &kp L    &kp MINUS
+&kp Z  &kp X         &kp C         &kp V   &kp B   &kp N   &kp M   &kp COMMA        &kp DOT  &kp SLASH
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &kp RIGHT_SHIFT  &none    &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -136,7 +209,7 @@
 &none      &none      &none      &none      &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
 &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
-&trans     &trans     &trans     &trans     &trans                            &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
+&trans     &trans     &trans     &trans     &trans           &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -148,7 +221,7 @@
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
 &kp F1            &kp F2            &kp F3            &kp F4            &kp F5            &kp F6            &kp F7            &kp F8            &kp F9            &kp F10
 &kp F11           &kp F12           &none             &none             &none             &none             &none             &mkp MB1          &mmv MOVE_UP      &mkp MB2
-&trans            &trans            &trans            &trans            &trans                              &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+&trans            &trans            &trans            &trans            &trans            &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -160,17 +233,19 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none
 &none         &none         &none           &none         &none         &none  &none  &none  &none  &none
 &none         &none         &none           &none         &none         &none  &none  &none  &none  &none
-&bootloader   &none         &none           &none         &none                &none  &none  &none  &none
+&bootloader   &none         &none           &none         &none         &none  &none  &none  &none
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
-        to_Alt {
+        to_ALT {
             bindings = <
        &kp LA(TAB)  &kp TAB
 &none  &none        &none    &kp F4  &none  &none  &none  &none     &none     &none
 &none  &none        &none    &none   &none  &none  &none  &none     &none     &none
 &none  &none        &none    &none   &none  &none  &none  &none     &kp UP    &none
-&none  &none        &none    &none   &none         &none  &kp LEFT  &kp DOWN  &kp RIGHT
+&none  &none        &none    &none   &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
     };
