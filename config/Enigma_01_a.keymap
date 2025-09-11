@@ -156,14 +156,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "f7_toALT_f8";
             #binding-cells = <0>;
-            bindings = <&lt_to_0 5 F7>, <&kp F8>;
+            bindings = <&lt_to_0 4 F7>, <&kp F8>;
         };
 
         tp3: hz_toALT {
             compatible = "zmk,behavior-tap-dance";
             label = "hz_toALT";
             #binding-cells = <0>;
-            bindings = <&lt_to_0 5 GRAVE>;
+            bindings = <&lt_to_0 4 GRAVE>;
         };
     };
 
@@ -171,7 +171,7 @@
         compatible = "zmk,combos";
 
         mo_setting {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <36 35>;
         };
     };
@@ -185,19 +185,7 @@
 &tp1   &kp W         &kp E         &kp R        &kp T          &kp Y    &kp U        &kp I            &kp O    &kp P
 &kp A  &kp S         &kp D         &kp F        &kp G          &kp H    &kp J        &kp K            &kp L    &kp MINUS
 &kp Z  &kp X         &kp C         &kp V        &kp B          &kp N    &kp M        &kp COMMA        &kp DOT  &kp SLASH
-&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &kp BACKSPACE  &kp DEL  &lt 3 ENTER  &kp RIGHT_SHIFT  &none    &kp LS(INTERNATIONAL_1)
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        Default_ {
-            bindings = <
-       &none         &none
-&tp1   &kp W         &kp E         &kp R   &kp T   &kp Y   &kp U   &kp I            &kp O    &kp P
-&kp A  &kp S         &kp D         &kp F   &kp G   &kp H   &kp J   &kp K            &kp L    &kp MINUS
-&kp Z  &kp X         &kp C         &kp V   &kp B   &kp N   &kp M   &kp COMMA        &kp DOT  &kp SLASH
-&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &none    &none
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 SPACE  &kp BACKSPACE  &kp DEL  &lt 2 ENTER  &kp RIGHT_SHIFT  &none    &kp LS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -247,6 +235,18 @@
 &none  &none        &none    &none   &none  &none  &none  &none     &kp UP    &none
 &none  &none        &none    &none   &none  &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
+        };
+
+        Default_ {
+            bindings = <
+       &none         &none
+&tp1   &kp W         &kp E         &kp R   &kp T   &kp Y   &kp U   &kp I            &kp O    &kp P
+&kp A  &kp S         &kp D         &kp F   &kp G   &kp H   &kp J   &kp K            &kp L    &kp MINUS
+&kp Z  &kp X         &kp C         &kp V   &kp B   &kp N   &kp M   &kp COMMA        &kp DOT  &kp SLASH
+&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &kp RIGHT_SHIFT  &none    &none
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
