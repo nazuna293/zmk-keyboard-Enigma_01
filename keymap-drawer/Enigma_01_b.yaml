@@ -36,7 +36,7 @@ layers:
   - '&tp2'
   - LEFT WIN
   - LEFT ALT
-  - {t: SPACE, h: Ctrl+_Num_}
+  - Ctrl+_Num_
   - BACKSPACE
   - {t: ENTER, h: Shift+_Mouse_}
   - RIGHT SHIFT

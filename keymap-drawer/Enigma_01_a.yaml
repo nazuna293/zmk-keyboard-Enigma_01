@@ -38,7 +38,7 @@ layers:
   - LEFT ALT
   - {t: SPACE, h: Ctrl+_Num_}
   - BACKSPACE
-  - BACKSPACE
+  - DEL
   - {t: ENTER, h: Shift+_Mouse_}
   - RIGHT SHIFT
   - ''
