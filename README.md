@@ -14,5 +14,10 @@
 |編集項目| マクロ等も編集できる|標準的な編集ができる|  
 
 ## 初期キーマップ
+tp1 = tap "tab",hold "ctrl",2tap "q"
+tp2 = hold "shift",taphold "ctrl"
+tp3 = tap "半／全",hold "layer to_ALT"
+tp4 = tap "f7",hold "layer to_ALT",2tap "f8"
+※to_ALTレイヤーに推移している間はALTキーが押されている状態になっています。
 
 ![](https://raw.githubusercontent.com/nazuna293/zmk-config-Enigma_01/main/keymap-drawer/Enigma_01_a.svg)
