@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "Enigma_01_layout.dtsi"
+#include "Enigma_01_layouts.dtsi"
 
 / {
     chosen {
