@@ -24,14 +24,4 @@
 
 ※to_ALTレイヤーに推移している間はALTキーが押されている状態になっています。
 
-### rotary encoder
-|name|left|right|
-|:-:|:-:|:-:|
-|scroll_up_down|scroll up|scroll down|
-|scroll_left_right|scroll left|scroll right|
-|arrow_up_down|up arrow|down arrow|
-|arrow_left_right|left arrow|right arrow|
-|page_up_down|page up|page down|
-
-
 ![](https://raw.githubusercontent.com/nazuna293/zmk-config-Enigma_01/main/keymap-drawer/Enigma_01_a.svg)
