@@ -16,10 +16,10 @@
 ## 初期キーマップ
 |tap dance|tap|hold|2tap|tap hold|
 |:-:|:-|:-|:-|:-|
-|tp1|tab|ctrl|q||
-|tp2||shift||ctrl|
+|tp1|Tab|Ctrl|Q||
+|tp2||Shift||Ctrl|
 |tp3|半／全|layer to_ALT|||
-|tp4|f7|layer to_ALT|f8||
+|tp4|F7|layer to_ALT|F8||
 
 ※to_ALTレイヤーに推移している間はALTキーが押されている状態になっています。
 
