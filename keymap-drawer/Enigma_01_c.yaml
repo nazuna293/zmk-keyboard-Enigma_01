@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: Enigma_01_c}
 layers:
-  Default_US:
-  - '&tp_hz_mo_kn'
-  - '&tp_f7_mo_f8'
-  - '&tp_tab_ctrl_q'
+  Default_JIS:
+  - '&tp3'
+  - '&tp4'
+  - '&tp1'
   - W
   - E
   - R
@@ -33,19 +33,19 @@ layers:
   - ','
   - .
   - /
-  - '&tp_shift_ctrl'
+  - '&tp2'
   - LEFT WIN
-  - '`'
+  - LEFT ALT
   - {t: SPACE, h: Ctrl+_Num_}
   - BACKSPACE
   - {t: ENTER, h: Shift+_Mouse_}
   - RIGHT SHIFT
-  - LANG ZENKAKUHANKAKU
+  - ''
   - Sft+INTERNATIONAL 1
-  Default_JIS:
-  - '&tp_hz_mo_kn'
-  - '&tp_f7_mo_f8'
-  - '&tp_tab_ctrl_q'
+  Default_:
+  - ''
+  - ''
+  - '&tp1'
   - W
   - E
   - R
@@ -75,15 +75,15 @@ layers:
   - ','
   - .
   - /
-  - '&tp_shift_ctrl'
+  - '&tp2'
   - LEFT WIN
-  - '`'
+  - LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RIGHT SHIFT
-  - LANG ZENKAKUHANKAKU
-  - Sft+INTERNATIONAL 1
+  - ''
+  - ''
   Ctrl+_Num_:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -204,14 +204,14 @@ layers:
   - '&bootloader'
   - ''
   - ''
-  - ''
   - {type: held}
   - {type: held}
   - ''
   - ''
   - ''
-  to_Alt: [Alt+TAB, TAB, '', '', '', F4, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', UP, '', '', '', '', '', '',
+  - ''
+  to_ALT: [Alt+TAB, TAB, '', '', '', F4, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', UP, '', '', '', '', '', '',
     '', LEFT, DOWN, RIGHT]
 combos:
-- p: [36, 37]
+- p: [36, 35]
   k: setting
