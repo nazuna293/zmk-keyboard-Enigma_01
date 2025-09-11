@@ -22,6 +22,8 @@
 |tp3|半／全|layer to_ALT|||
 |tp4|F7|layer to_ALT|F8||
 
+※to_ALTレイヤーに推移している間はALTキーが押されている状態になっています。
+
 ### rotary encoder
 |name|left|right|
 |:-:|:-:|:-:|
@@ -31,6 +33,5 @@
 |arrow_left_right|left arrow|right arrow|
 |page_up_down|page up|page down|
 
-※to_ALTレイヤーに推移している間はALTキーが押されている状態になっています。
 
 ![](https://raw.githubusercontent.com/nazuna293/zmk-config-Enigma_01/main/keymap-drawer/Enigma_01_a.svg)
