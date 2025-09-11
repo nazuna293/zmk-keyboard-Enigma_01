@@ -11,7 +11,7 @@ on:
 
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.2.1
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@vmain
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
