@@ -229,7 +229,7 @@
 
         to_ALT {
             bindings = <
-       &kp LA(TAB)  &kp TAB
+       &kp LS(TAB)  &kp TAB
 &none  &none        &none    &kp F4  &none  &none  &none  &none     &kp PAGE_UP    &none
 &none  &none        &none    &none   &none  &none  &none  &none     &kp PAGE_DOWN  &none
 &none  &none        &none    &none   &none  &none  &none  &none     &kp UP         &none
