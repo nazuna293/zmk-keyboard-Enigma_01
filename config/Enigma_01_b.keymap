@@ -163,7 +163,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "hz_toALT";
             #binding-cells = <0>;
-            bindings = <&lt_to_0 4 GRAVE>;
+            bindings = <&lt_to_0 4 GRAVE>, <&none>;
         };
     };
 
@@ -200,7 +200,7 @@
 &trans     &trans     &trans     &trans     &trans                            &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&arrow_left_right>;
         };
 
         Shift+_Mouse_ {
@@ -230,23 +230,11 @@
         to_ALT {
             bindings = <
        &kp LA(TAB)  &kp TAB
-&none  &none        &none    &kp F4  &none  &none  &none  &none     &none     &none
-&none  &none        &none    &none   &none  &none  &none  &none     &none     &none
-&none  &none        &none    &none   &none  &none  &none  &none     &kp UP    &none
-&none  &none        &none    &none   &none         &none  &kp LEFT  &kp DOWN  &kp RIGHT
+&none  &none        &none    &kp F4  &none  &none  &none  &none     &kp PAGE_UP    &none
+&none  &none        &none    &none   &none  &none  &none  &none     &kp PAGE_DOWN  &none
+&none  &none        &none    &none   &none  &none  &none  &none     &kp UP         &none
+&none  &none        &none    &none   &none         &none  &kp LEFT  &kp DOWN       &kp RIGHT
             >;
-        };
-
-        Default_ {
-            bindings = <
-       &none         &none
-&tp1   &kp W         &kp E         &kp R   &kp T   &kp Y  &kp U   &kp I            &kp O    &kp P
-&kp A  &kp S         &kp D         &kp F   &kp G   &kp H  &kp J   &kp K            &kp L    &kp MINUS
-&kp Z  &kp X         &kp C         &kp V   &kp B   &kp N  &kp M   &kp COMMA        &kp DOT  &kp SLASH
-&tp2   &kp LEFT_WIN  &kp LEFT_ALT  &trans  &trans         &trans  &kp RIGHT_SHIFT  &none    &none
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
