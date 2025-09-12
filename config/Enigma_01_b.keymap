@@ -6,6 +6,7 @@
 // #include <layout_shift_kp_override.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define to_ALT 5
 
 / {
     // zmk-listeners
@@ -14,7 +15,7 @@
         compatible = "zmk,layer-listeners";
 
         release_alt {
-            layers = <5>;
+            layers = <to_ALT>;
             bindings = <&kt_on LEFT_ALT &kt_off LEFT_ALT>;
         };
     };
