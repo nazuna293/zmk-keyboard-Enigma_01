@@ -1,3 +1,5 @@
+#include "Enigma_01.dtsi"
+
 / {
     chosen {
         zmk,physical-layout = &layout_b;
