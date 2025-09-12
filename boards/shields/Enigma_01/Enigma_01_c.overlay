@@ -4,4 +4,8 @@
     chosen {
         zmk,physical-layout = &layout_c;
     };
+
+    encoder_0 {
+        status = "okay";
+    };
 };
