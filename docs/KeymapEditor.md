@@ -2,7 +2,7 @@
 ## GitHubリポジトリのフォーク  
 ファームウェアはGitHub Actionsで書き出します。  
 1. GitHubアカウントを持っていない場合は、事前に[アカウント登録](https://github.com/signup)をしてください。  
-2. 準備が出来たらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-config-Enigma_01)をフォークします。  
+2. 準備が出来たらEnigma_01の[リポジトリ](https://github.com/nazuna293/zmk-keyboard-Enigma_01)をフォークします。  
 <img src="img/FORK_01.jpg">
 <img src="img/FORK_02.jpg">
 <img src="img/FORK_03.jpg">
