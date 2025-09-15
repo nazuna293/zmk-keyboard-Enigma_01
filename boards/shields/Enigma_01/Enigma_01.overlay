@@ -1,1 +1,12 @@
 #include "Enigma_01.dtsi"
+
+/{
+     chosen {
+        zmk,kscan = &kscan_0;
+        zmk,studio-rpc = &studio_usb;
+    };
+
+    studio_usb: studio_usb {
+        compatible = "zmk,studio-rpc-usb-uart";
+    };
+};
