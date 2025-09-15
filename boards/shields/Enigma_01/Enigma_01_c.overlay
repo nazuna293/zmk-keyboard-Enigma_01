@@ -1,4 +1,4 @@
-#include "Enigma_01.dtsi"
+#include "Enigma_01.overlay"
 
 &chosen {
     zmk,physical-layout = &layout_c;
