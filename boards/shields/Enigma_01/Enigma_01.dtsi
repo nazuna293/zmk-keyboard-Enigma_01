@@ -2,11 +2,6 @@
 #include "Enigma_01_layouts.dtsi"
 
 / {
-    chosen {
-        zmk,kscan = &kscan_0;
-        zmk,studio-rpc = &studio_usb;
-    };
-
     transform_a: transform_a {
         compatible = "zmk,matrix-transform";
         rows = <7>;
@@ -57,9 +52,5 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_0>;
         triggers-per-rotation = <12>;
-    };
-
-    studio_usb: studio_usb {
-        compatible = "zmk,studio-rpc-usb-uart";
     };
 };
