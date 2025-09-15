@@ -1,7 +1,9 @@
 #include "Enigma_01.overlay"
 
-&chosen {
-    zmk,physical-layout = &layout_c;
+/{
+    chosen {
+        zmk,physical-layout = &layout_a;
+    };
 };
 
 &encoder_0 {
