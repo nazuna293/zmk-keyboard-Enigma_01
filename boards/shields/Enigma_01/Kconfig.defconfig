@@ -22,13 +22,6 @@ config ZMK_BATTERY_REPORTING
 config BT_BAS
 	default y
 
-# Encoder
-config EC11
-	default y
-
-config EC11_TRIGGER_GLOBAL_THREAD
-	default y
-
 # ZMK studio
 config ZMK_STUDIO
 	default y
