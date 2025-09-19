@@ -3,4 +3,37 @@ if SHIELD_Enigma_01
 config ZMK_KEYBOARD_NAME
     default "Enigma_01"
 
+config ZMK_USB
+	default y
+
+config ZMK_BLE
+	default y
+
+config ZMK_MOUSE
+	default y
+
+# Battery
+config ZMK_BATTERY
+	default y
+
+config ZMK_BATTERY_REPORTING
+	default y
+
+config BT_BAS
+	default y
+
+# Encoder
+config EC11
+	default y
+
+config EC11_TRIGGER_GLOBAL_THREAD
+	default y
+
+# ZMK studio
+config ZMK_STUDIO
+	default y
+
+config ZMK_STUDIO_LOCKING
+	default n
+
 endif
