@@ -1,7 +1,7 @@
 このリポジトリは設計者向けに公開しています。
 
-総合案内は[こちら](https://github.com/nazuna293/Enigma_01)です。
-ユーザー向けのファームウェア(リポジトリ)は[こちら](https://github.com/nazuna293/zmk-Enigma_01-user-config)です。
++ 総合案内は[こちら](https://github.com/nazuna293/Enigma_01)です。
++ユーザー向けのファームウェア(リポジトリ)は[こちら](https://github.com/nazuna293/zmk-Enigma_01-user-config)です。
 
 ## 初期キーマップ
 ### Tap Dance
