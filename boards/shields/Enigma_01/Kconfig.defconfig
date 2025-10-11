@@ -13,21 +13,4 @@ config ZMK_BLE
 config ZMK_MOUSE
 	default y
 
-# Battery
-config ZMK_BATTERY
-	default y
-
-config ZMK_BATTERY_REPORTING
-	default y
-
-config BT_BAS
-	default y
-
-# ZMK studio
-config ZMK_STUDIO
-	default y
-
-config ZMK_STUDIO_LOCKING
-	default n
-
 endif
