@@ -2,7 +2,7 @@
 
 /{
     chosen {
-        zmk,physical-layout = &layout_a;
+        zmk,physical-layout = &layout_b;
     };
 };
 
