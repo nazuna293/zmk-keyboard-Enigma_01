@@ -36,7 +36,7 @@ layers:
   - '&tp2'
   - LEFT WIN
   - LEFT ALT
-  - KP DOT
+  - {t: SPACE, h: Ctrl+_Num_}
   - BACKSPACE
   - DEL
   - {t: ENTER, h: Shift+_Mouse_}
@@ -79,7 +79,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
