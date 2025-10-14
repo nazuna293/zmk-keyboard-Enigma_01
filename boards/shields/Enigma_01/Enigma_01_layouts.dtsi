@@ -163,17 +163,17 @@
 
         map_a: map_a {
             physical-layout = <&layout_a>;
-            positions = <39 40 41>;
+            positions = <38>;
         };
 
         map_b: map_b {
             physical-layout = <&layout_b>;
-            positions = <38 39 40>;
+            positions = <37>;
         };
 
         map_c: map_c {
             physical-layout = <&layout_c>;
-            positions = <38 39 40>;
+            positions = <37>;
         };
     };
 };
