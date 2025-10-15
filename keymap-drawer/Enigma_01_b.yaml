@@ -39,8 +39,8 @@ layers:
   - {t: SPACE, h: Ctrl+_Num_}
   - BACKSPACE
   - {t: ENTER, h: Shift+_Mouse_}
-  - RIGHT SHIFT
-  - ''
+  - RALT
+  - '&tp2'
   - Sft+INTERNATIONAL 1
   Ctrl+_Num_:
   - {t: ▽, type: trans}
