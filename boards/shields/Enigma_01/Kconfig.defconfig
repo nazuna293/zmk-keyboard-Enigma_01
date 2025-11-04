@@ -10,7 +10,4 @@ config ZMK_USB
 config ZMK_BLE
 	default y
 
-config ZMK_MOUSE
-	default y
-
 endif
