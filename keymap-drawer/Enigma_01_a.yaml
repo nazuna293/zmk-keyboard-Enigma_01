@@ -56,20 +56,20 @@ layers:
   - KP 9
   - KP MINUS
   - PRINTSCREEN
-  - ''
-  - ''
-  - ''
-  - ''
+  - Ctl+A
+  - Ctl+S
+  - Ctl+D
+  - Ctl+F
   - ''
   - KP 4
   - KP 5
   - KP 6
   - KP PLUS
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - DELETE
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - KP 0
   - KP 1
   - KP 2
@@ -171,9 +171,9 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
+  - ''
   to_ALT: [Sft+TAB, TAB, '', '', '', F4, '', '', '', '', PAGE UP, '', '', '', '', '', '', '', '', '', PAGE DOWN, '', '', '', '', '', '', '', '', '', UP, '', '', '',
-    '', '', '', '', ENTER, LEFT, DOWN, RIGHT]
+    '', '', '', '', '', LEFT, DOWN, RIGHT]
 combos:
 - p: [36, 35]
   k: setting
