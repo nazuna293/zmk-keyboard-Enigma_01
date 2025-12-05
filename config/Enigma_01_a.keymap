@@ -192,9 +192,9 @@
         Ctrl+_Num_ {
             bindings = <
         &trans  &trans
-&none   &none   &none   &none   &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
-&none   &none   &none   &none   &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &none
-&none   &none   &none   &none   &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
+&none      &none      &none      &none      &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS    &kp PRINTSCREEN
+&kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS     &kp DELETE
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp UP_ARROW    &kp KP_DOT
 &trans  &trans  &trans  &trans  &trans           &trans           &trans           &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
@@ -219,7 +219,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none  &none  &none  &none  &none
 &none         &none         &none           &none         &none         &none  &none  &none  &none  &none
 &none         &none         &none           &none         &none         &none  &none  &none  &none  &none
-&bootloader   &none         &none           &none         &none         &none  &none  &none  &none  &sys_reset
+&bootloader   &none         &none           &none         &none         &none  &none  &none  &none  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -231,7 +231,7 @@
 &none  &none        &none    &kp F4  &none  &none  &none      &none     &kp PAGE_UP    &none
 &none  &none        &none    &none   &none  &none  &none      &none     &kp PAGE_DOWN  &none
 &none  &none        &none    &none   &none  &none  &none      &none     &kp UP         &none
-&none  &none        &none    &none   &none  &none  &kp ENTER  &kp LEFT  &kp DOWN       &kp RIGHT
+&none  &none        &none    &none   &none  &none  &none      &kp LEFT  &kp DOWN       &kp RIGHT
             >;
         };
     };
